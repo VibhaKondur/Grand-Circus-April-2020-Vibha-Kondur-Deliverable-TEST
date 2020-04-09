@@ -14,6 +14,7 @@ namespace Grand_Circus_April_2020_Vibha_Kondur_Deliverable_1
             Console.WriteLine("What type of vacation do you want to go on - Musical, Tropical, or Adventurous?");
             vacationType = Console.ReadLine();
 
+            //if (vacationType.ToLower() == "musical")
             if (vacationType == "Musical")
             {
                 Destination = "New Orleans";    
@@ -54,7 +55,10 @@ namespace Grand_Circus_April_2020_Vibha_Kondur_Deliverable_1
                 TravelSuggestion = "Charter Flight";
             }
 
-            Console.WriteLine("Since you're a group of" + GroupSize + "going on a" + vacationType + "vacation, you should take a" + TravelSuggestion + "to" + Destination);
+            //string template = "Since you're a group of {0} going on a {1} vacation, you should take a {2} to {3}.";
+            //string formatted = string.Format(template, GroupSize, vacationType, TravelSuggestion, Destination);
+            //Console.WriteLine(formatted);
+            Console.WriteLine("Since you're a group of " + GroupSize + " going on a " + vacationType + " vacation, you should take a " + TravelSuggestion + " to " + Destination);
         }   
     }
 }
